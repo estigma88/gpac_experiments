@@ -1,0 +1,1 @@
+gpac -i udp://239.0.0.1:1234 reframer:rt=on -o http://http_origin:80/live/upload/playlist.mpd:gpac:dual:buf=-100:segdur=2.0:cdur=0.2:asto=0.8:llhls=sf:hlsc=true:cmaf=cmfc:dmode=dynamic:profile=dashif.ll:utcs=https://time.akamai.com/?iso:hmode=push:template=segment_$$(openssl rand -hex 5):hmode=push

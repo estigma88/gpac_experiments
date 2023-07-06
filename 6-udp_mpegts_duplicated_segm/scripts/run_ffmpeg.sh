@@ -1,0 +1,1 @@
+ffmpeg -re -f lavfi -i testsrc=size=1280x720:rate=25 -f lavfi -i sine=frequency=1000:duration=5 -f mpegts -vcodec libx264 -profile:v high444 -b:v 2000k -maxrate 2000k -bufsize 2000k -r:v 25 -g 50 udp://239.0.0.1:1234
