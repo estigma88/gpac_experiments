@@ -23,5 +23,5 @@ def process_file(filename):
         print(duplicate)
 
 # Example usage
-filename = '../logs/access.log'  # Replace with the actual filename
+filename = 'logs/access.log'  # Replace with the actual filename
 process_file(filename)
